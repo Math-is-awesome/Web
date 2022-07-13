@@ -22,7 +22,7 @@ h2{
 
 h3{
     font-family:"Montserrat-Bold";
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 p{
@@ -30,6 +30,10 @@ p{
 
 }
 
+a{
+   color:inherit
+
+}
 /*Navigation Bar*/
 
 .navbar-brand{
@@ -52,6 +56,10 @@ p{
     
 }
 
+.navbar-nav{
+
+    float: right!important;
+}
 .download-button{
     margin: 5% 3% 5% 0;
 }
@@ -59,7 +67,24 @@ p{
 .title-image{
     width:60%;
     transform: rotate(25deg);
+    position:relative
     
+}
+
+/*Feature Section*/
+
+#features{
+    padding: 3% 15% 0 15%;
+}
+
+.feature-box{
+
+    text-align: center;
+    padding: 5%;
+}
+
+.icons{
+    color:#ef8172
 }
 
 /*Testimonial Section*/
@@ -81,14 +106,14 @@ p{
 }
 
 .carousel-item{
-    padding: 7% 15%;
+    padding: 5% 15% 5% 15%;
 
 }
 #press{
 
     background-color: #ef8172;
     text-align: center;
-    padding-bottom: 4%;  
+    padding-bottom: 0;  
 }
 
 .press-logo{
@@ -96,5 +121,66 @@ p{
     margin: 20px 20px 50px ;
 }
 
+/*Pricing Section*/
+
+#pricing{
+    margin: 3%;
+
+}
+
+.pricegroup{
+    margin:auto;
 
 
+}
+
+.buy{
+    text-align: center;
+}
+
+/*CTA Section*/
+
+#cta{
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 7% 15% 7% 15%;
+    
+}
+
+.cta-heading{
+    line-height: 1.5;
+    font-size: 3.5rem;
+
+}
+
+/*Footer Section*/
+
+#footer{
+    background-color: white;
+    text-align: center;
+    padding: 0 15% 0 15%;
+}
+
+.footerbutton{
+
+        margin:3%
+}
+
+.footericon{
+    margin: 1%;
+
+}
+/*Media Query Breakingpoints*/
+
+@media(max-width:1028px) {
+.title-image {
+    position:static;
+    transform:rotate(0);
+}
+#title{
+    text-align: center;
+}
+
+}

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/679d313a77.js" crossorigin="anonymous"></script>
   <title>TinFish</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,7 @@
   <section id="title">
 
     <!-- Nav Bar -->
-    <nav class="navbar sticky-top navbar-expand-lg  navbar-light ">
+    <nav class="navbar fixed-top navbar-transparent navbar-expand-lg  navbar-light ">
       <p class="navbar-brand" href="">TinFish</p>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"  aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,23 +26,35 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ms-auto">
 
+<!-- Nav Bar   -> Dropdownmenu, which might be enabled again, when the whole website is finished
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Programme
             </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="../CSS-My Site/index.html">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
+
+              
+
+          </li> Nav Bar -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>  
+
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Press</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="">Pricing</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="" style="margin-right: 10px">Download</a>
+            <a class="nav-link" href="#footer" style="margin-right: 10px">Contact</a>
           </li>
 
         </ul>
@@ -54,9 +67,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-6 col-sm-12" style="background-color:#ff4c68">
-          <h1>Meet new and interesting fishs nearby.</h1>
-          <button type="button" class="btn btn-dark download-button" >Download</button>
-          <button type="button" class="btn btn-outline-light download-button">Download</button>
+          <h1>Lerne Fische in deiner Umgebung kennen und vernetze dich</h1>
+          <button type="button" class="btn btn-dark download-button"><i class="fa-brands fa-google-play"></i> Download</button>
+          <button type="button" class="btn btn-outline-light download-button"><i class="fa-brands fa-apple"></i> Download</button>
         </div>
         <div class="col-lg-6 col-sm-12" style="background-color:#ff4c68">
           <img src="images/axelotl.png" class="title-image" alt="iphone-mockup">
@@ -69,16 +82,25 @@
   <!-- Features -->
 
   <section id="features">
+    <div class="row">
+    <div class="feature-box col-lg-4 ">
+      <i class=" icons fa-solid fa-circle-check fa-5x"></i>
+      <h3>Einfacher Einstieg</h3>
+      <p>So nutzerfreundlich, dass sogar Dein Fisch die App bedienen kann</p>
+    </div>
 
-    <h3>Einfacher Einstieg</h3>
-    <p>So nutzerfreundlich, dass sogar Dein Fisch die App bedienen kann</p>
+    <div class="feature-box col-lg-4 ">
+      <i class="icons fa-solid fa-bullseye fa-5x"></i>
+      <h3>Riesiges Klientel</h3>
+      <p>Bei uns findest du jeden Fisch, von A wie Anglerfisch bis Z wie Zander.</p>
+    </div>
 
-    <h3>Riesiges Klientel</h3>
-    <p>Bei uns findest du jeden Fisch, von A wie Anglerfisch bis Z wie Zander.</p>
-
-    <h3>Garantierter Erfolg</h3>
-    <p>Finde die Liebe des Lebens Deines Fisches und lass Ihn die Grätchenfrage stellen. Solltest Du keinen Erfolg haben, bekommst Du Dein Geld zurück, versprochen..</p>
-
+    <div class="feature-box col-lg-4">
+      <i class=" icons fa-solid fa-heart fa-5x"></i>
+      <h3>Garantierter Erfolg</h3>
+      <p>Solltest Du keinen Erfolg haben, bekommst Du Dein Geld zurück, versprochen!</p>
+    </div>
+    </div>
   </section>
 
 
@@ -90,13 +112,20 @@
         <div class="carousel-item active">
           <h2>Bevor ich TinFish nutze habe ich nie eine Beziehung starten können. Die anderen Fische waren immer alle so... Barsch. Anfangs kam mir TinFish dabei noch ziemlich fishy vor.  Doch dann habe ich mir die Liebe meines Lebens geangelt. Blub.</h2>
           <img class="testimonial-image" src="images/fish.jpg" alt="fish-profile">
-          <em>Pebbles, New York</em>
+          <em>Nemo, Atlanta</em>
         </div>
         <div class="carousel-item" >
           <h2 class="testimonial-text"> Mein Fisch, neigt dazu viele Witze zu machen. Er ist halt ein richtiger mit allen Wassern gewaschener Clownfisch. Leider hielt das die Damenwelt jedoch immer davon ab, Ihn näher kennenlernen zu wollen. Doch mithilfe von TinFish ist er nun Hecht glücklich geworden. Glaube ich zumindest.</h2>
           <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-          <em>Beverly, Illinois</em> 
+          <em>Patricia ,Restaurant "Aqua R. Ium"</em> 
         </div>
+
+        <div class="carousel-item" >
+          <h2 class="testimonial-text"> Lange Zeit habe ich unter meinem Single-Darsein gelitten. Ich habe mich wieder und wieder gefragt "Was kannst du Thun Fisch?" . Doch dann kam TinFish. Dank TinFish sehe ich jetzt endlich wieder Licht am Ende des Single-Tunnels</h2>
+          <img class="testimonial-image" src="images/deepsea.PNG" alt="Anglerfisch">
+          <em>Angelo, Mariengraben</em> 
+        </div>
+
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -123,48 +152,57 @@
   <!-- Pricing -->
 
   <section id="pricing">
-    <div class="row row-cols-4 row-cols-md-12 g-12">
-        <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col-md-4">
+        <div class="pricegroup card text-dark bg-light mb-3" style="width: auto;">
           <div class="card-header">
-            <h3>Chiauauau</h3>
+            <h3>Buckelwahl</h3>
           </div>
           <div class='card-body'>
             <h2 class="card-title">Free</h2>
             <p class="card-text">5 Matches Per Day</p>
           <p class="card-text">10 Messages Per Day</p>
           <p class="card-text">Unlimited App Usage</p>
-          <button type="button">Sign Up</button>
+          <div class="card-footer bg-transparent border-secondary buy">
+            <button type="button" class="btn btn-outline-primary ">Sign Up</button>
+          </div>
           </div>
         </div>
+      </div>
       
 
 
-      <div class="col">
-        <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+      <div class="col col-md-4">
+        <div class="pricegroup card text-dark bg-light mb-3" style="width: auto;">
           <div class="card-header">
-          <h3>Labrador</h3>
+          <h3>Blauwahl</h3>
           </div>
           <div class='card-body'>
             <h2 class="card-title">$49 / mo</h2>
             <p class="card-text">Unlimited Matches</p>
             <p class="card-text">Unlimited Messages</p>
             <p class="card-text">Unlimited App Usage</p>
-            <button type="button">Sign Up</button>
+            <div class="card-footer bg-transparent border-secondary buy">
+              <button type="button" class="btn btn-outline-primary ">Sign Up</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+
+
+      <div class="col col-md-4 ">
+        <div class="pricegroup card text-dark bg-light mb-3" style="width: auto;">
           <div class="card-header">
-          <h3>Mastiff</h3>
+          <h3>Wahlhai</h3>
           </div>
           <div class='card-body'>
             <h2 class="card-title">$99 / mo</h2>
             <p class="card-text">Pirority Listing</p>
             <p class="card-text">Unlimited Messages</p>
             <p class="card-text">Unlimited App Usage</p>
-            <button type="button">Sign Up</button>
-          </div>
+            <div class="card-footer bg-transparent border-secondary buy">
+              <button type="button" class="btn btn-outline-primary ">Sign Up</button>
+            </div>
         </div>
       </div>
     </div>
@@ -175,9 +213,12 @@
 
   <section id="cta">
 
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <h3 class="cta-heading">Find the True Love of Your Fish's Life Today.</h3>
+
+    <button type="button" class="footerbutton btn btn-dark btn-lg"><i class="fa-brands fa-google-play"></i> Donwload Now</button>
+    <button type="button" class=" footerbutton btn btn-outline-light btn-lg"><i class="fa-brands fa-apple"></i> Donwload Now</button>
+
+    
 
   </section>
 
@@ -185,11 +226,12 @@
   <!-- Footer -->
 
   <footer id="footer">
-
-    <p>© Copyright TinDog</p>
+    <a href="https://de-de.facebook.com/"><span><i class="fa-brands fa-facebook footericon "></i></span></a>
+    <a href="https://twitter.com/"><i class="fa-brands fa-twitter footericon "></i></a>
+    <a href="mailto:abc_dies_ist_eine_fakemail@test.de"><i class="fa-solid fa-envelope footericon "></i></a>
+    <p>© Copyright TinFish</p>
 
   </footer>
-
 
 </body>
 
